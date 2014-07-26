@@ -88,15 +88,21 @@ cp ./out/OSX_InstallESD_10.9_13A603.dmg dmg/OSX_InstallESD_10.9_13A603.dmg
 touch dmg/OSX_InstallESD_10.9_13A603.dmg
 make vmware/osx109
 ```
+```bash
+ls -al box/vmware/
+total 11584248
+drwxr-xr-x  2 dieterreuter  staff         102 Jul 26 20:21 .
+drwxr-xr-x  3 dieterreuter  staff         102 Jul 26 18:16 ..
+-rw-r--r--  1 dieterreuter  staff  5931133443 Jul 26 20:40 osx109-nocm.box
+```
+
+Add our newly created basebox
+```bash
+vagrant box add osx109 box/vmware/osx109-nocm.box
+```
 
 
 ## Step 3: create a Vagrantfile
-
-
-We need to install the Vagrant plug-in `vagrant-serverspec`
-```bash
-vagrant plugin install vagrant-serverspec
-```
 
 
 
