@@ -1,5 +1,4 @@
-mac-osx-box
-===========
+# mac-osx-box
 
 How-To for creating an OSX box the Vagrant way.
 
