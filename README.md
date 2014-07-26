@@ -56,6 +56,13 @@ sudo prepare_iso/prepare_iso.sh ~/iso/osx/Mavericks/Install\ OS\ X\ Mavericks.ap
 -- MD5: 22d1358cfc2d885200468912191283a2
 -- Done. Built image is located at out/OSX_InstallESD_10.9_13A603.dmg. Add this iso and its checksum to your template.
 ```
+```bash
+ls -al out/
+total 10378528
+drwxr-xr-x   2 dieterreuter  staff         102 Jul 26 14:59 .
+drwxr-xr-x  10 dieterreuter  staff         646 Jul 26 14:57 ..
+-rw-r--r--@  1 dieterreuter  staff  5313805837 Jul 26 15:02 OSX_InstallESD_10.9_13A603.dmg
+```
 
 
 We need to install the Vagrant plug-in `vagrant-serverspec`
