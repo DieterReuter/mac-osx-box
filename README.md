@@ -26,6 +26,8 @@ drwxr-xr-x  3 dieterreuter  staff   102 Nov  2  2013 Install OS X Mavericks.app
 
 ## Step 2: prepare the OSX basebox with `box-cutter`
 
+Here we just use `box-cutter` and the [osx-vm](https://github.com/box-cutter/osx-vm).
+
 
 ## Step 3: create a Vagrantfile
 
