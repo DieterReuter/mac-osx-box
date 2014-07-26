@@ -20,6 +20,14 @@ How-To for creating an OSX box the Vagrant way.
 
 After completing this step, you'll have an `Install OS X Mavericks.app` ready on your disk drive.
 
+
+Here are some instructions how you can download an App from the AppStore and easily access the Installer(.dmg), see http://derflounder.wordpress.com/2013/08/22/downloading-apples-server-app-installer-package/
+
+First step is to enable the "Debug" menu in the "App Store" App.
+```bash
+defaults write com.apple.appstore ShowDebugMenu -bool true
+```
+
 For your convenience we just store that in our `iso structure` in `~/iso/osx/Mavericks/`
 ```bash
 ls -al ~/iso/osx/Mavericks/
