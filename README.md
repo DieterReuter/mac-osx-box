@@ -9,6 +9,13 @@ How-To for creating an OSX box the Vagrant way.
 3. create a Vagrantfile
 
 
+## Prerequisites
+1. we need [Packer](http://www.packer.io)
+2. we need [Vagrant](http://www.vagrantup.com)
+3. we need [VirtualBox](https://www.virtualbox.org) --or--
+3. we need [VMware Fusion](http://www.vmware.com/products/fusion/)
+
+
 ## Step 1: fetch an 'Mavericks.app' from AppStore
 
 After completing this step, you'll have an `Install OS X Mavericks.app` ready on your disk drive.
@@ -64,14 +71,24 @@ drwxr-xr-x  10 dieterreuter  staff         646 Jul 26 14:57 ..
 -rw-r--r--@  1 dieterreuter  staff  5313805837 Jul 26 15:02 OSX_InstallESD_10.9_13A603.dmg
 ```
 
+Now, let's build the basebox using `Packer`.
+```bash
+mkdir -p "iso/OS X Mavericks"
+touch "iso/OS X Mavericks/Install OS X Mavericks.app"
+mkdir -p dmg
+cp ./out/OSX_InstallESD_10.9_13A603.dmg dmg/OSX_InstallESD_10.9_13A603.dmg
+touch dmg/OSX_InstallESD_10.9_13A603.dmg
+make vmware/osx109
+```
+
+
+## Step 3: create a Vagrantfile
+
 
 We need to install the Vagrant plug-in `vagrant-serverspec`
 ```bash
 vagrant plugin install vagrant-serverspec
 ```
-
-
-## Step 3: create a Vagrantfile
 
 
 
