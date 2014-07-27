@@ -1,8 +1,5 @@
 #!/bin/bash
 
-exit
-
-
 # install Xcode Command Line Tools
 git --help >/dev/null 2>&1
 if [ $? -gt 0 ]; then

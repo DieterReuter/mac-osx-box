@@ -1,4 +1,5 @@
 resources/
 .vagrant
+*.swp
 
 .DS_Store
